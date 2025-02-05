@@ -12,7 +12,6 @@ books = [
 def get_books():
     # Look for an "author" query parameter in the request
     author_query = request.args.get("author")
-    print (author_query)
     if author_query:
         # Filter books by matching the query against the "author" field (case-insensitive)
         filtered_books = [
